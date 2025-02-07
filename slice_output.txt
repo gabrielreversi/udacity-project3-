@@ -1,0 +1,16 @@
+education = Bachelors: {'Precision': 0.0, 'Recall': 1.0, 'Fbeta': 0.0}
+education = HS-grad: {'Precision': 0.0, 'Recall': 1.0, 'Fbeta': 0.0}
+education = 11th: {'Precision': 0.0, 'Recall': 1.0, 'Fbeta': 0.0}
+education = Masters: {'Precision': 0.0, 'Recall': 1.0, 'Fbeta': 0.0}
+education = 9th: {'Precision': 0.0, 'Recall': 1.0, 'Fbeta': 0.0}
+education = Some-college: {'Precision': 0.0, 'Recall': 1.0, 'Fbeta': 0.0}
+education = Assoc-acdm: {'Precision': 0.0, 'Recall': 1.0, 'Fbeta': 0.0}
+education = 7th-8th: {'Precision': 0.0, 'Recall': 1.0, 'Fbeta': 0.0}
+education = Doctorate: {'Precision': 0.0, 'Recall': 1.0, 'Fbeta': 0.0}
+education = Assoc-voc: {'Precision': 0.0, 'Recall': 1.0, 'Fbeta': 0.0}
+education = Prof-school: {'Precision': 0.0, 'Recall': 1.0, 'Fbeta': 0.0}
+education = 5th-6th: {'Precision': 1.0, 'Recall': 1.0, 'Fbeta': 1.0}
+education = 10th: {'Precision': 0.0, 'Recall': 1.0, 'Fbeta': 0.0}
+education = Preschool: {'Precision': 0.0, 'Recall': 1.0, 'Fbeta': 0.0}
+education = 12th: {'Precision': 0.0, 'Recall': 1.0, 'Fbeta': 0.0}
+education = 1st-4th: {'Precision': 0.0, 'Recall': 1.0, 'Fbeta': 0.0}

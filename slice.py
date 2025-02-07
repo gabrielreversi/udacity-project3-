@@ -3,6 +3,7 @@ import pandas as pd
 import pickle
 from starter.ml.model import inference, compute_model_metrics
 from starter.ml.data import process_data
+import joblib
 
 
 def compute_slice_metrics(model, encoder, lb, cleaned_df, categorical_features, slice_features):
@@ -61,18 +62,20 @@ if __name__ == '__main__':
         "sex",
         "native-country",
     ]
+
     file_dir = os.path.dirname(__file__)
-    data = pd.read_csv(os.path.join(file_dir, './data/census_cleaned.csv'))
+    model_path = os.path.join(file_dir, "model/model.pkl")
+    encoder_path = os.path.join(file_dir, "model/encoder.pkl")
+    lb_path = os.path.join(file_dir, "model/lb.pkl")
 
-    model_path = os.path.join(file_dir, './model/rf_model.pkl')
-    model = pickle.load(open(model_path, 'rb'))
 
-    encoder_path = os.path.join(file_dir, './model/encoder.pkl')
-    encoder = pickle.load(open(encoder_path, 'rb'))
+    model = joblib.load(model_path)
+    encoder = joblib.load(encoder_path)
+    lb = joblib.load(lb_path)
 
-    lb_path = os.path.join(file_dir, './model/lb.pkl')
-    lb = pickle.load(open(lb_path, 'rb'))
-
+    file_dir = os.path.dirname(__file__)
+    data = pd.read_csv("D:/workspace/pj_udacity/4.deploy_ml_model/starter/data/census.csv")
+    
     compute_slice_metrics(
         model=model,
         encoder=encoder,
