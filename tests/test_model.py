@@ -1,3 +1,7 @@
+import sys # noqa: E402
+root_dir = os.path.join(os.path.dirname(__file__), '..') # noqa: E402
+sys.path.append(root_dir) # noqa: E402
+
 import pytest
 import pandas as pd
 import joblib
@@ -5,7 +9,6 @@ from starter.ml.data import process_data
 from starter.train_model import model
 
 import os
-import sys
 import numpy as np
 from sklearn.base import BaseEstimator, ClassifierMixin
 

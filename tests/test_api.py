@@ -1,11 +1,11 @@
+import sys # noqa: E402
+root_dir = os.path.join(os.path.dirname(__file__), "..") # noqa: E402
+sys.path.append(root_dir) # noqa: E402
+
 from fastapi.testclient import TestClient
 from main import app
 import os
-import sys
 import json
-
-root_dir = os.path.join(os.path.dirname(__file__), "..")
-sys.path.append(root_dir)
 
 client = TestClient(app)
 
