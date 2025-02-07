@@ -7,14 +7,9 @@ import pytest
 import pandas as pd
 import joblib
 from starter.ml.data import process_data
-from starter.train_model import model
 
 import numpy as np
 from sklearn.base import BaseEstimator, ClassifierMixin
-
-root_dir = os.path.join(os.path.dirname(__file__), '..')
-sys.path.append(root_dir)
-
 from starter.ml.model import train_model, compute_model_metrics, inference
 
 def test_train_model():
