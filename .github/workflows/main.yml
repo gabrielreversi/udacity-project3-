@@ -15,7 +15,7 @@ jobs:
     - name: Checkout código
       uses: actions/checkout@v2
 
-    - name: Configurar Python 3.10
+    - name: Configurar Python 3.12.1
       uses: actions/setup-python@v2
       with:
         python-version: 3.12
