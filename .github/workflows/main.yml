@@ -61,7 +61,7 @@ jobs:
       # Test with pytest
       - name: Test with pytest
         run: |
-          pytest tests -vv
+          pytest test -vv
 
   # This workflow contains a single job called "deploy"
   deploy:
